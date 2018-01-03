@@ -1,0 +1,3 @@
+1. Ejecutar setup.exe
+2. Seguir las instrucciones
+3. Buscar la carpeta C:\Program Files (x86)\Bosoft\My Product Name y copiar el archivo msvcr71.dll en C:\Windows\System y C:\Windows\System32 

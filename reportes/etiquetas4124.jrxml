@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="etiquetas" language="groovy" columnCount="3" pageWidth="595" pageHeight="842" columnWidth="198" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="d37583e6-1d20-4224-a768-0a2377fa4d0b">
+	<property name="ireport.zoom" value="0.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="cod1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod4" class="java.lang.String"/>
+	<parameter name="cod5" class="java.lang.String"/>
+	<parameter name="cod6" class="java.lang.String"/>
+	<parameter name="cod7" class="java.lang.String"/>
+	<parameter name="cod8" class="java.lang.String"/>
+	<parameter name="cod9" class="java.lang.String"/>
+	<parameter name="cod10" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod11" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod12" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod13" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod14" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod15" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod16" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod17" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod18" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod19" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod20" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod21" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod22" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod23" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod24" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod25" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod26" class="java.lang.String"/>
+	<parameter name="cod27" class="java.lang.String"/>
+	<parameter name="precio1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="precio2" class="java.lang.String"/>
+	<parameter name="precio3" class="java.lang.String"/>
+	<parameter name="precio4" class="java.lang.String"/>
+	<parameter name="precio5" class="java.lang.String"/>
+	<parameter name="precio6" class="java.lang.String"/>
+	<parameter name="precio7" class="java.lang.String"/>
+	<parameter name="precio8" class="java.lang.String"/>
+	<parameter name="precio9" class="java.lang.String"/>
+	<parameter name="precio10" class="java.lang.String"/>
+	<parameter name="precio11" class="java.lang.String"/>
+	<parameter name="precio12" class="java.lang.String"/>
+	<parameter name="precio13" class="java.lang.String"/>
+	<parameter name="precio14" class="java.lang.String"/>
+	<parameter name="precio15" class="java.lang.String"/>
+	<parameter name="precio16" class="java.lang.String"/>
+	<parameter name="precio17" class="java.lang.String"/>
+	<parameter name="precio18" class="java.lang.String"/>
+	<parameter name="precio19" class="java.lang.String"/>
+	<parameter name="precio20" class="java.lang.String"/>
+	<parameter name="precio21" class="java.lang.String"/>
+	<parameter name="precio22" class="java.lang.String"/>
+	<parameter name="precio23" class="java.lang.String"/>
+	<parameter name="precio24" class="java.lang.String"/>
+	<parameter name="precio25" class="java.lang.String"/>
+	<parameter name="precio26" class="java.lang.String"/>
+	<parameter name="precio27" class="java.lang.String"/>
+	<parameter name="empresa" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="desc1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="desc2" class="java.lang.String"/>
+	<parameter name="desc3" class="java.lang.String"/>
+	<parameter name="desc4" class="java.lang.String"/>
+	<parameter name="desc5" class="java.lang.String"/>
+	<parameter name="desc6" class="java.lang.String"/>
+	<parameter name="desc7" class="java.lang.String"/>
+	<parameter name="desc8" class="java.lang.String"/>
+	<parameter name="desc9" class="java.lang.String"/>
+	<parameter name="desc10" class="java.lang.String"/>
+	<parameter name="desc11" class="java.lang.String"/>
+	<parameter name="desc12" class="java.lang.String"/>
+	<parameter name="desc13" class="java.lang.String"/>
+	<parameter name="desc14" class="java.lang.String"/>
+	<parameter name="desc15" class="java.lang.String"/>
+	<parameter name="desc16" class="java.lang.String"/>
+	<parameter name="desc17" class="java.lang.String"/>
+	<parameter name="desc18" class="java.lang.String"/>
+	<parameter name="desc19" class="java.lang.String"/>
+	<parameter name="desc20" class="java.lang.String"/>
+	<parameter name="desc21" class="java.lang.String"/>
+	<parameter name="desc22" class="java.lang.String"/>
+	<parameter name="desc23" class="java.lang.String"/>
+	<parameter name="desc24" class="java.lang.String"/>
+	<parameter name="desc25" class="java.lang.String"/>
+	<parameter name="desc26" class="java.lang.String"/>
+	<parameter name="desc27" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="842" splitType="Stretch">
+			<componentElement>
+				<reportElement x="15" y="4" width="142" height="45" isRemoveLineWhenBlank="true" uuid="4af50156-d03f-4c5a-a744-298622995303"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod1}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="26" y="49" width="120" height="11" isRemoveLineWhenBlank="true" uuid="4518c126-6155-4e7e-bb18-86decbf04201"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="59" width="183" height="11" isRemoveLineWhenBlank="true" uuid="7ff3bdc5-eb0e-41e3-819e-158d5b5ea885"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="82" y="70" width="115" height="12" isRemoveLineWhenBlank="true" uuid="3568fbb8-d60a-41f7-b007-49daf032bd64"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="69" width="7" height="14" isRemoveLineWhenBlank="true" uuid="27cf4b6e-02e2-4a98-8fea-00e08d761756"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="20" y="69" width="62" height="14" isRemoveLineWhenBlank="true" uuid="a7406525-135c-4d3c-bc05-153cd47f2fa3"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="60" width="183" height="11" isRemoveLineWhenBlank="true" uuid="58d0910a-2a3f-4797-a4d6-da9043b54c88"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="70" width="7" height="14" isRemoveLineWhenBlank="true" uuid="6d6ee8c7-d9be-4015-9580-3f64608bd653"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="280" y="71" width="115" height="12" isRemoveLineWhenBlank="true" uuid="6c060866-c0a6-4465-a9a5-0c06bbcca585"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="50" width="120" height="11" isRemoveLineWhenBlank="true" uuid="69ddf04f-20ea-449c-bdc5-9c140dc0423e"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod2}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="211" y="5" width="142" height="45" isRemoveLineWhenBlank="true" uuid="82d04d8c-e72e-4ff1-9736-fb40b8f8a251"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod2}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="218" y="70" width="62" height="14" isRemoveLineWhenBlank="true" uuid="0bc7cc0a-d9d6-402d-a26c-f47bf0132e85"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="60" width="183" height="11" isRemoveLineWhenBlank="true" uuid="919d9758-9f60-4a44-8c05-a4a3ba456345"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc3}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="479" y="71" width="115" height="12" isRemoveLineWhenBlank="true" uuid="c0c61f75-ebb1-46f7-b603-af62b094ca67"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="70" width="62" height="14" isRemoveLineWhenBlank="true" uuid="f675aad1-5870-48a3-a746-d2a282043856"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio3}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="412" y="5" width="142" height="45" isRemoveLineWhenBlank="true" uuid="a7de6309-2465-4964-a334-dd0743e72050"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod3}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<staticText>
+				<reportElement x="409" y="70" width="7" height="14" isRemoveLineWhenBlank="true" uuid="29985319-1cb6-4e4b-a5d3-db7ad6cc0923"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="423" y="50" width="120" height="11" isRemoveLineWhenBlank="true" uuid="449eea93-ead4-4cf5-ba80-934728fc8752"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="152" width="183" height="11" isRemoveLineWhenBlank="true" uuid="1484065b-7beb-439e-a1f1-e4b3f7d6a822"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="153" width="183" height="11" isRemoveLineWhenBlank="true" uuid="7274804d-9571-4e93-96e6-ee6b09fa6562"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="162" width="7" height="14" isRemoveLineWhenBlank="true" uuid="46615619-6312-416e-ba92-5d3622f2050f"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="412" y="98" width="142" height="45" isRemoveLineWhenBlank="true" uuid="feac97fa-ecbe-4c26-9f0e-41823b437dfe"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod6}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="417" y="163" width="62" height="14" isRemoveLineWhenBlank="true" uuid="d76047fe-c449-453e-8f14-38b65d52d6c5"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="163" width="7" height="14" isRemoveLineWhenBlank="true" uuid="4ba27879-6a16-49f8-80b3-cc27180597de"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="142" width="120" height="11" isRemoveLineWhenBlank="true" uuid="76fe072a-4dca-468b-910d-dde83b4e3176"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod4}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="15" y="97" width="142" height="45" isRemoveLineWhenBlank="true" uuid="f88adeda-4ca2-46ef-a08d-93f0da6263ee"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod4}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="479" y="164" width="115" height="12" isRemoveLineWhenBlank="true" uuid="1c10d421-49a4-4693-ab8f-bd06aff20af7"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="163" width="62" height="14" isRemoveLineWhenBlank="true" uuid="ca3b38f9-503c-475c-a7e3-0b0ca3d989e7"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio5}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="280" y="164" width="115" height="12" isRemoveLineWhenBlank="true" uuid="85716572-307b-465f-9cff-f1810096c9f3"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="409" y="163" width="7" height="14" isRemoveLineWhenBlank="true" uuid="7bf700a1-58f5-43eb-9946-35eaef691be6"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="211" y="98" width="142" height="45" isRemoveLineWhenBlank="true" uuid="cb894981-72c3-4e45-8b67-e46f2413a698"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod5}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="423" y="143" width="120" height="11" isRemoveLineWhenBlank="true" uuid="99e82c17-5abf-4f16-abe9-a625dae1cbad"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="143" width="120" height="11" isRemoveLineWhenBlank="true" uuid="1674fd97-34c8-4722-9ab1-54df60fe65d4"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod5}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="82" y="163" width="115" height="12" isRemoveLineWhenBlank="true" uuid="1d04a65c-06a7-4c49-a400-da4bfd7ffe0c"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="153" width="183" height="11" isRemoveLineWhenBlank="true" uuid="c1490b91-f115-4863-9908-83c0b5b5f79c"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="162" width="62" height="14" isRemoveLineWhenBlank="true" uuid="517e7e6a-cde7-425a-aa86-70a37e52aa68"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="246" width="183" height="11" isRemoveLineWhenBlank="true" uuid="7cdb3031-92ce-4c4b-98e1-15c079f83e12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="247" width="183" height="11" isRemoveLineWhenBlank="true" uuid="2f6b5669-9832-4a10-84b4-532b9b035797"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="256" width="7" height="14" isRemoveLineWhenBlank="true" uuid="3d890242-4446-4a24-a0d7-e66e2bffe650"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="412" y="192" width="142" height="45" isRemoveLineWhenBlank="true" uuid="93cedfce-05c4-492e-8b0b-72d692ad0ac9"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod9}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="417" y="257" width="62" height="14" isRemoveLineWhenBlank="true" uuid="2120d5ff-67b5-4c71-a7fc-feb2baf47926"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio9}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="257" width="7" height="14" isRemoveLineWhenBlank="true" uuid="9cbefdc1-e2fb-4c2e-b450-7f284132e352"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="236" width="120" height="11" isRemoveLineWhenBlank="true" uuid="1ced9394-e299-4efd-9daf-0bf13e060dd6"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod7}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="15" y="191" width="142" height="45" isRemoveLineWhenBlank="true" uuid="e0f21d32-585e-49a5-bb1c-dda4b53f0cd7"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod7}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="479" y="258" width="115" height="12" isRemoveLineWhenBlank="true" uuid="993ccc80-d1f6-4921-8be7-cd384ebb0518"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="257" width="62" height="14" isRemoveLineWhenBlank="true" uuid="2107f000-ef02-4c5e-90de-0399bb3aa050"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio8}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="280" y="258" width="115" height="12" isRemoveLineWhenBlank="true" uuid="584033de-66bc-46a9-be2f-57418729fda9"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="409" y="257" width="7" height="14" isRemoveLineWhenBlank="true" uuid="81eb6d4c-bf66-470d-bbe0-65bfb03be87b"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="211" y="192" width="142" height="45" isRemoveLineWhenBlank="true" uuid="c8c5cc8a-4820-41b8-a03d-bcc1d54a8d49"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod8}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="423" y="237" width="120" height="11" isRemoveLineWhenBlank="true" uuid="b66f4505-63cc-4b54-bc62-f7090b1e7c64"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="237" width="120" height="11" isRemoveLineWhenBlank="true" uuid="ed36d9ed-7f51-4a67-8456-fd53d7d57633"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod8}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="82" y="257" width="115" height="12" isRemoveLineWhenBlank="true" uuid="bd09ca34-9cfa-41de-8aac-e92bfae8cdd2"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="247" width="183" height="11" isRemoveLineWhenBlank="true" uuid="f2a7044a-731d-4c48-b718-04033992f35e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="256" width="62" height="14" isRemoveLineWhenBlank="true" uuid="0c3f8477-e383-4902-b657-bf820bce1e59"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="339" width="183" height="11" isRemoveLineWhenBlank="true" uuid="3e2c0d02-ba79-4ab8-bcad-91a648674be9"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="340" width="183" height="11" isRemoveLineWhenBlank="true" uuid="a1cdd308-6c1f-4b75-8e88-1911119f2eff"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="349" width="7" height="14" isRemoveLineWhenBlank="true" uuid="50d25e15-9e20-43e1-b533-63a14a6bc9d6"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="412" y="285" width="142" height="45" isRemoveLineWhenBlank="true" uuid="efc781ac-2cbd-416d-a7c1-0ac0c64df25c"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod12}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="417" y="350" width="62" height="14" isRemoveLineWhenBlank="true" uuid="cedf2899-7e58-468c-8ee1-dabd28b93d14"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio12}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="350" width="7" height="14" isRemoveLineWhenBlank="true" uuid="e782a5e9-3bf5-431c-b12c-0dee09e28286"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="329" width="120" height="11" isRemoveLineWhenBlank="true" uuid="3ca11571-6ae1-46cd-ad9e-223f1e11961e"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod10}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="15" y="284" width="142" height="45" isRemoveLineWhenBlank="true" uuid="cbb4f69e-6289-4440-9805-833331e5576e"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod10}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="479" y="351" width="115" height="12" isRemoveLineWhenBlank="true" uuid="510604f0-0057-475f-b121-7c021a668d9e"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="350" width="62" height="14" isRemoveLineWhenBlank="true" uuid="27c2a97f-56dd-462d-92fd-3f10baf3928a"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio11}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="280" y="351" width="115" height="12" isRemoveLineWhenBlank="true" uuid="878c78f5-f840-446e-aef4-dcbd0e941dce"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="409" y="350" width="7" height="14" isRemoveLineWhenBlank="true" uuid="c2a2271a-8f2e-4218-9e70-529b9592748d"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="211" y="285" width="142" height="45" isRemoveLineWhenBlank="true" uuid="735d30d5-0380-473a-a928-729e4f9d2181"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod11}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="423" y="330" width="120" height="11" isRemoveLineWhenBlank="true" uuid="1ad688bd-6532-4c9e-bd62-30e053925499"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="330" width="120" height="11" isRemoveLineWhenBlank="true" uuid="63ef36ed-62c4-4873-a079-a076ca55a77d"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod11}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="82" y="350" width="115" height="12" isRemoveLineWhenBlank="true" uuid="3f35822a-0712-4e9b-b5a0-8e9b161f389d"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="340" width="183" height="11" isRemoveLineWhenBlank="true" uuid="f4268445-3db5-4db5-bbe7-6bf20460c392"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="349" width="62" height="14" isRemoveLineWhenBlank="true" uuid="91bffbd2-cb5f-460f-b0c8-d0ceff6bddd0"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="433" width="183" height="11" isRemoveLineWhenBlank="true" uuid="88b796b1-c51e-46cc-8c32-3f4c25621e41"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="434" width="183" height="11" isRemoveLineWhenBlank="true" uuid="9f34a2d7-c584-4820-9ac8-e9cb61aea574"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc14}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="443" width="7" height="14" isRemoveLineWhenBlank="true" uuid="290b1cdd-a090-436f-80c1-8edd06abf36c"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="412" y="379" width="142" height="45" isRemoveLineWhenBlank="true" uuid="0e2758f9-fa72-49a7-a6d3-e06e8937c173"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod15}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="417" y="444" width="62" height="14" isRemoveLineWhenBlank="true" uuid="0d2dd552-a081-4e41-a09b-e3335a19927d"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio15}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="444" width="7" height="14" isRemoveLineWhenBlank="true" uuid="e6203d76-52f2-4d21-b95b-dcbf5cedbfa6"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="423" width="120" height="11" isRemoveLineWhenBlank="true" uuid="43750a33-8e92-4751-ad04-47e1211f2ab1"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod13}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="15" y="378" width="142" height="45" isRemoveLineWhenBlank="true" uuid="798a7548-2ad4-4674-8236-f789c0625f47"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod13}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="479" y="445" width="115" height="12" isRemoveLineWhenBlank="true" uuid="43093bc9-8805-45d1-8e77-e553668bd266"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="444" width="62" height="14" isRemoveLineWhenBlank="true" uuid="47521fb1-2f21-4208-a29b-0cc15b4bcf8e"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio14}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="280" y="445" width="115" height="12" isRemoveLineWhenBlank="true" uuid="54297c4e-2f29-487d-a95a-babc0d25f56b"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="409" y="444" width="7" height="14" isRemoveLineWhenBlank="true" uuid="87af2a50-a497-491b-b64d-df41c3aa5253"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="211" y="379" width="142" height="45" isRemoveLineWhenBlank="true" uuid="32564f3b-afc1-4aab-970f-896e38f15e27"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod14}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="423" y="424" width="120" height="11" isRemoveLineWhenBlank="true" uuid="6992a18b-379c-459f-a812-39ade8f3812c"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="424" width="120" height="11" isRemoveLineWhenBlank="true" uuid="cd0a8ffa-d908-47c6-a98b-0a8621c9fba9"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod14}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="82" y="444" width="115" height="12" isRemoveLineWhenBlank="true" uuid="cc550691-afb8-4ce6-b972-efc1e1e404b3"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="434" width="183" height="11" isRemoveLineWhenBlank="true" uuid="c722cc03-0547-4c54-8932-82a5ff3aae85"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="443" width="62" height="14" isRemoveLineWhenBlank="true" uuid="9fe7b045-803c-4cd5-8990-8a6268f2fe3e"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="526" width="183" height="11" isRemoveLineWhenBlank="true" uuid="0827828f-e6dc-4a8e-bc4e-a7cf506af3d5"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="527" width="183" height="11" isRemoveLineWhenBlank="true" uuid="219feafb-12b0-4604-9c5a-493f545b7cca"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc17}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="536" width="7" height="14" isRemoveLineWhenBlank="true" uuid="909edb6a-4421-4b6a-9c45-55296d380d47"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="412" y="472" width="142" height="45" isRemoveLineWhenBlank="true" uuid="14e6faa5-b082-47ce-a5d7-b07182ff2db7"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod18}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="417" y="537" width="62" height="14" isRemoveLineWhenBlank="true" uuid="2039c17d-695f-45da-8cb2-fd61e97415d5"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio18}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="537" width="7" height="14" isRemoveLineWhenBlank="true" uuid="0475ab87-f9b6-433a-88e4-17b16122d66c"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="516" width="120" height="11" isRemoveLineWhenBlank="true" uuid="85f44279-02d3-4dac-840b-87a600b8438d"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod16}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="15" y="471" width="142" height="45" isRemoveLineWhenBlank="true" uuid="5bfd386b-f7ef-4a80-84ec-66b227be9e99"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod16}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="479" y="538" width="115" height="12" isRemoveLineWhenBlank="true" uuid="33fbee8d-4f9d-4180-bbdc-918e98fb5b0f"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="537" width="62" height="14" isRemoveLineWhenBlank="true" uuid="ecfa35fb-5fac-452d-8db2-83f4f0fab056"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio17}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="280" y="538" width="115" height="12" isRemoveLineWhenBlank="true" uuid="14283430-6d00-487d-8aa4-8b44273b68f5"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="409" y="537" width="7" height="14" isRemoveLineWhenBlank="true" uuid="3d182116-3cd5-43ca-9d09-a791029645c8"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="211" y="472" width="142" height="45" isRemoveLineWhenBlank="true" uuid="c06e2654-8e1e-461c-a5f2-33387ccbd391"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod17}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="423" y="517" width="120" height="11" isRemoveLineWhenBlank="true" uuid="214c15de-d98a-4064-8e19-5d689347aef4"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod18}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="517" width="120" height="11" isRemoveLineWhenBlank="true" uuid="b77a751e-35de-4d63-90a3-e876605adafc"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod17}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="82" y="537" width="115" height="12" isRemoveLineWhenBlank="true" uuid="47383939-f006-4ebd-a372-1f556bcd2a85"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="527" width="183" height="11" isRemoveLineWhenBlank="true" uuid="86b30d10-f6af-49ce-b7c8-3b1cee3cbe18"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc18}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="536" width="62" height="14" isRemoveLineWhenBlank="true" uuid="b7b77ea0-db01-4f7f-bf21-87121464b3f6"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="620" width="183" height="11" isRemoveLineWhenBlank="true" uuid="86cfbb0b-17e7-484e-b856-29bfe0511eda"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc19}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="621" width="183" height="11" isRemoveLineWhenBlank="true" uuid="d42023ff-e037-4777-ae3c-cf4ea465c2ca"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc20}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="630" width="7" height="14" isRemoveLineWhenBlank="true" uuid="5a5e170e-5093-489a-9033-97a1fc4f0030"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="412" y="566" width="142" height="45" isRemoveLineWhenBlank="true" uuid="9570f34c-74e1-45be-b1b8-1df072b3c330"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod21}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="417" y="631" width="62" height="14" isRemoveLineWhenBlank="true" uuid="e6e44c8b-1a26-46b6-9012-9509e6f9b033"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio21}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="631" width="7" height="14" isRemoveLineWhenBlank="true" uuid="39305673-d0fc-4611-b48f-cf342fcbb454"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="610" width="120" height="11" isRemoveLineWhenBlank="true" uuid="6f6ea307-8bc1-4e25-9e31-dde8fcdc2ce9"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod19}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="15" y="565" width="142" height="45" isRemoveLineWhenBlank="true" uuid="f92d677c-3402-4a40-8570-a5989d375cd4"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod19}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="479" y="632" width="115" height="12" isRemoveLineWhenBlank="true" uuid="5b2c7c7d-3e22-45f9-a601-893ac52e849e"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="631" width="62" height="14" isRemoveLineWhenBlank="true" uuid="c74441fc-3b92-4a31-b1ad-5bf67dc36e2e"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio20}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="280" y="632" width="115" height="12" isRemoveLineWhenBlank="true" uuid="378151e8-b954-4926-b0b3-0c3b60006128"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="409" y="631" width="7" height="14" isRemoveLineWhenBlank="true" uuid="f475ce52-ca34-48a4-ba93-8d1e728bf4f3"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="211" y="566" width="142" height="45" isRemoveLineWhenBlank="true" uuid="10cd4726-2d50-40d0-b307-fe8be733edc0"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod20}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="423" y="611" width="120" height="11" isRemoveLineWhenBlank="true" uuid="986e170e-ca52-4615-8573-d46317c45791"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod21}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="611" width="120" height="11" isRemoveLineWhenBlank="true" uuid="e4d3a030-7525-44a2-9ac8-837260bb9f6d"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod20}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="82" y="631" width="115" height="12" isRemoveLineWhenBlank="true" uuid="28b264cb-3678-47ec-9ae9-36cbecbd72cc"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="621" width="183" height="11" isRemoveLineWhenBlank="true" uuid="cf60fef2-b496-4ef3-a9a8-a6c862c5648d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc21}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="630" width="62" height="14" isRemoveLineWhenBlank="true" uuid="47f63901-ee12-427c-9e56-204152c7faa8"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio19}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="713" width="183" height="11" isRemoveLineWhenBlank="true" uuid="bc55eba7-5b3a-4bae-b903-4585391b8c10"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc22}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="714" width="183" height="11" isRemoveLineWhenBlank="true" uuid="ce27476d-0445-41e5-809a-cc0947c17715"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc23}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="723" width="7" height="14" isRemoveLineWhenBlank="true" uuid="f996edb8-ea09-465b-8956-3277684cff25"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="412" y="659" width="142" height="45" isRemoveLineWhenBlank="true" uuid="d4923839-5dcb-444f-9ef3-50cd691c509f"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod24}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="417" y="724" width="62" height="14" isRemoveLineWhenBlank="true" uuid="83a2f9ea-50bb-44fe-89ac-40f1cb8d1215"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio24}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="724" width="7" height="14" isRemoveLineWhenBlank="true" uuid="be487ef0-bf93-43cb-9df9-877f1533594f"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="703" width="120" height="11" isRemoveLineWhenBlank="true" uuid="0ba5e4fb-789c-4c3d-b74e-c1cccad5c871"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod22}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="15" y="658" width="142" height="45" isRemoveLineWhenBlank="true" uuid="c3bfe9e4-f0b8-4e76-818c-c6a689f52d58"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod22}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="479" y="725" width="115" height="12" isRemoveLineWhenBlank="true" uuid="faaaf30b-0bc8-43be-8599-efc457b1e6a2"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="724" width="62" height="14" isRemoveLineWhenBlank="true" uuid="3832bde6-7dae-4d67-9233-27000d627235"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio23}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="280" y="725" width="115" height="12" isRemoveLineWhenBlank="true" uuid="4231651b-378d-4c88-8e84-e57291c68b83"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="409" y="724" width="7" height="14" isRemoveLineWhenBlank="true" uuid="68557f35-f464-46d2-b43a-57526894d79a"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="211" y="659" width="142" height="45" isRemoveLineWhenBlank="true" uuid="cad8914e-d47a-4deb-b84b-dc74bd22771b"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod23}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="423" y="704" width="120" height="11" isRemoveLineWhenBlank="true" uuid="fe9ba363-272d-4119-84fe-b53cfdc0dfc0"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod24}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="704" width="120" height="11" isRemoveLineWhenBlank="true" uuid="2fd7c1fa-fa1b-4aa6-b715-27e5c4fd3b47"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod23}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="82" y="724" width="115" height="12" isRemoveLineWhenBlank="true" uuid="b9eca243-850a-456d-8a20-2166cfb43f50"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="714" width="183" height="11" isRemoveLineWhenBlank="true" uuid="1b123086-c5d4-42e8-a802-0287369ec57f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc24}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="723" width="62" height="14" isRemoveLineWhenBlank="true" uuid="0ce3ff72-600e-44c9-9a97-4a8916455ff9"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio22}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="807" width="183" height="11" isRemoveLineWhenBlank="true" uuid="01a1a0cc-65b9-408e-af4d-6bef554f63f4"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc25}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="808" width="183" height="11" isRemoveLineWhenBlank="true" uuid="996f9dd6-ff0b-483d-bcef-c021493f4683"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc26}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="817" width="7" height="14" isRemoveLineWhenBlank="true" uuid="3dd8a8a4-65c7-47aa-966a-66796d7a9375"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="412" y="753" width="142" height="45" isRemoveLineWhenBlank="true" uuid="45fef83b-bf7e-4be5-bae9-8cd65c8dc12a"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod27}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="417" y="818" width="62" height="14" isRemoveLineWhenBlank="true" uuid="2147277b-c7dd-4166-a051-f6b8f6fc98a0"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio27}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="818" width="7" height="14" isRemoveLineWhenBlank="true" uuid="dc1ee25d-3196-4317-9de1-882aa8d22e6d"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="797" width="120" height="11" isRemoveLineWhenBlank="true" uuid="754a624c-4952-4bb9-ae7f-0f74f135fe23"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod25}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="15" y="752" width="142" height="45" isRemoveLineWhenBlank="true" uuid="d72d4e77-6e83-44bd-bf43-653a208e88dd"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod25}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="479" y="819" width="115" height="12" isRemoveLineWhenBlank="true" uuid="1ac3e152-ee76-418c-865c-6de64c7355f1"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="218" y="818" width="62" height="14" isRemoveLineWhenBlank="true" uuid="d1a1cc17-e81a-4eb6-a922-b9cf4637b9fa"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio26}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="280" y="819" width="115" height="12" isRemoveLineWhenBlank="true" uuid="b2416f19-2fb7-4e38-8944-06ead36bdeff"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="409" y="818" width="7" height="14" isRemoveLineWhenBlank="true" uuid="d3d07ed7-07d9-4246-8e83-a39f7f18bcf9"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[$]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="211" y="753" width="142" height="45" isRemoveLineWhenBlank="true" uuid="1ffad1fd-667c-4c33-8f49-227e7e53040f"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false" barHeight="100">
+					<jr:codeExpression><![CDATA[$P{cod26}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="423" y="798" width="120" height="11" isRemoveLineWhenBlank="true" uuid="16a6052c-cc4a-44d2-84a2-dcd65d6955c9"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod27}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="798" width="120" height="11" isRemoveLineWhenBlank="true" uuid="90776b68-be2b-4b70-a997-1e46bd51915f"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cod26}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="82" y="818" width="115" height="12" isRemoveLineWhenBlank="true" uuid="97771c9f-6620-4a93-b14e-35e2bd40168a"/>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="8" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="409" y="808" width="183" height="11" isRemoveLineWhenBlank="true" uuid="78ad2aa6-ac3b-4e21-8e46-9bd214d961c8"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{desc27}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="817" width="62" height="14" isRemoveLineWhenBlank="true" uuid="78018c4f-6510-49f2-8bd5-3fb55d8f8a4f"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{precio25}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

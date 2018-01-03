@@ -1,0 +1,8 @@
+#Thu Jun 19 21:07:03 ART 2014
+port=3306
+user=matera
+#host=190.15.192.100
+host=localhost
+pass=123456
+schema=matera
+sucursal=0001

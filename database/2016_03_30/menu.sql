@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `matera`.`menu` (`posicion`, `nombre`, `accion`, `habilita`) VALUES ('1G', 'ABM Tipo Operacion', '85', 'S')

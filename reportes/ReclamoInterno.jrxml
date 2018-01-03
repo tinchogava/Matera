@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CertImplante" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="41df5fce-8310-40b4-b7e0-c6b71c75d79d">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFBFBF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="id_reclamo" class="java.lang.String"/>
+	<parameter name="tipoReclamo" class="java.lang.String"/>
+	<parameter name="sectorReclamo" class="java.lang.String"/>
+	<parameter name="fechaReclamo" class="java.lang.String"/>
+	<parameter name="prestacion" class="java.lang.String"/>
+	<parameter name="profesional" class="java.lang.String"/>
+	<parameter name="paciente" class="java.lang.String"/>
+	<parameter name="id_cirugia" class="java.lang.Integer"/>
+	<parameter name="lugarCirugia" class="java.lang.String"/>
+	<parameter name="fechaCirugia" class="java.util.Date"/>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<parameter name="pie" class="java.io.InputStream"/>
+	<field name="descripcion" class="java.lang.String"/>
+	<field name="procedimientos" class="java.lang.String"/>
+	<field name="acciones" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="133" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle" isUsingCache="true" onErrorType="Blank">
+				<reportElement x="366" y="0" width="189" height="132" uuid="bc387867-dc38-4438-8f0b-d2f4c5466319"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="0" width="366" height="14" uuid="e8ef2f41-6284-421f-9c9d-b02a9fa77818"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Arial" size="11" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Reclamo Interno Nº " + $P{id_reclamo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="60" width="96" height="12" uuid="78df5f77-1cec-40e9-a4f3-fecb114e4d83"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="4"/>
+				</textElement>
+				<text><![CDATA[Obra Social]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="84" width="270" height="12" uuid="ecccc4b8-89cc-4b8f-a2e0-ad8583300caa"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paciente}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="72" width="96" height="12" uuid="93953708-f145-49dc-bd94-f79a6fec8442"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="4"/>
+				</textElement>
+				<text><![CDATA[Profesional]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="48" width="270" height="12" uuid="073e776e-d34a-4fc2-9cd0-08fc054b71af"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaReclamo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="24" width="96" height="12" uuid="3ca7242b-f878-43a1-b93a-d9e7b4b8427c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="4"/>
+				</textElement>
+				<text><![CDATA[Tipo de Reclamo]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="95" y="96" width="270" height="12" uuid="ccf5cd31-6599-41ba-a717-7e0f60ece28f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{id_cirugia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="84" width="96" height="12" uuid="3a948500-6cc6-4d48-8cbc-a0e189aa59ce"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="4"/>
+				</textElement>
+				<text><![CDATA[Paciente]]></text>
+			</staticText>
+			<textField pattern="EEEEE, dd MMMMM yyyy">
+				<reportElement x="96" y="36" width="270" height="12" uuid="9239caee-1b47-47d7-a974-c36e8cc87a90"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sectorReclamo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="120" width="270" height="12" uuid="41df3d54-2166-4c85-9ec6-95e38b08a465"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaCirugia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-1" y="48" width="96" height="12" uuid="fb442e53-3a3e-4e82-8786-3ea7b8718369"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="4"/>
+				</textElement>
+				<text><![CDATA[Fecha de Reclamo]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="95" y="72" width="270" height="12" uuid="59cfa8a9-1336-426e-9485-4cc23a80ff10"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{profesional}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="60" width="270" height="12" uuid="0a715de8-9afd-4609-87c0-f3428cff606b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{prestacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="108" width="270" height="12" uuid="85b6cca1-533f-4bae-bf0e-5bd380a76924"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lugarCirugia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-1" y="96" width="96" height="12" uuid="404cde0a-34ef-4e3f-b6fc-1d7080e7d39d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="4"/>
+				</textElement>
+				<text><![CDATA[Número de Cirugía]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="117" width="96" height="12" uuid="d6d45f51-cce4-46e8-adfd-85eb77f872de"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="4"/>
+				</textElement>
+				<text><![CDATA[Fecha de Cirugía]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="108" width="96" height="12" uuid="090e44e3-a7f6-481f-9090-bb702c7fdbe0"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="4"/>
+				</textElement>
+				<text><![CDATA[Lugar de Cirugía]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="96" y="24" width="270" height="12" uuid="991ca22b-bb6d-4c75-be8b-ca18468e2391"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tipoReclamo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="36" width="96" height="12" uuid="a520f235-fd08-4bb7-8861-d20729ad863b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="9"/>
+					<paragraph rightIndent="4"/>
+				</textElement>
+				<text><![CDATA[Sector de Reclamo]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band height="155" splitType="Stretch">
+			<elementGroup>
+				<textField evaluationTime="Report">
+					<reportElement x="297" y="10" width="40" height="20" uuid="413dd9b8-03b2-44d1-9c7a-054c636783dc"/>
+					<textElement verticalAlignment="Top">
+						<font fontName="Arial" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="217" y="10" width="80" height="20" uuid="1b10cd54-8091-4046-9b97-758357fac820"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font fontName="Arial" size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+				</textField>
+			</elementGroup>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="535" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="5" width="554" height="1" uuid="a658fd2e-ca17-4b58-9bda-4e8c0587713f"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="4" y="16" width="132" height="12" uuid="8a33872a-511f-4a02-be2c-8b8215944ffa"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Descripción del Reclamo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="182" width="213" height="12" uuid="f2c0133d-b5e0-4dd9-97f3-0f49aa295396"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Procedimiento al que se aplica el Reclamo]]></text>
+			</staticText>
+			<image hAlign="Center" vAlign="Middle" isUsingCache="true" onErrorType="Blank">
+				<reportElement x="-1" y="-108" width="555" height="108" uuid="46cf8975-640b-44ff-ab6c-8cb9530d479c"/>
+				<imageExpression><![CDATA[$P{pie}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="-1" y="38" width="555" height="132" uuid="bb1b4f5a-d4b6-4455-95ad-71e5cbbe8f67"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+					<paragraph leftIndent="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="204" width="555" height="143" uuid="72544bc9-78fc-4b3d-bbaa-48934110a618"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+					<paragraph leftIndent="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{procedimientos}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="363" width="174" height="12" uuid="7c85c1aa-69d0-492c-8600-6c90ca01c86a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Acciones Preventivas/Correctivas]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="387" width="555" height="131" uuid="9aa0309b-ebd9-4d92-9e2e-9ca5034a7d9b"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+					<paragraph leftIndent="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{acciones}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

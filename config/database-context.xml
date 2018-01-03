@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa" 
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	    http://www.springframework.org/schema/data/jpa 	http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd 
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd"
+	default-autowire="byName">
+
+    <!-- Holding properties for database connectivity / -->
+    <context:property-placeholder location="config/jdbc-mysql.properties" ignore-unresolvable="true" ignore-resource-not-found="true"/>
+	
+	<!-- Enabling annotation driven configuration / -->
+	<context:annotation-config />
+
+
+	<!-- DataSource -->
+	<bean id="dataSourceDev" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="url">
+			<value>${database.url}</value>
+		</property>
+		<property name="driverClassName">
+			<value>${database.driver}</value>
+		</property>
+		<property name="username">
+			<value>${database.user}</value>
+		</property>
+		<property name="password">
+			<value>${database.password}</value>
+		</property>
+		<property name="initialSize">
+			<value>${database.initialSize}</value>
+		</property>
+		<property name="maxActive">
+			<value>${database.maxActive}</value>
+		</property>
+		<property name="maxOpenPreparedStatements">
+			<value>${database.maxOpenPreparedStatements}</value>
+		</property>
+		<property name="validationQuery">
+			<value>${database.validationQuery}</value>
+		</property>
+		<property name="testOnBorrow">
+			<value>${database.testOnBorrow}</value>
+		</property>
+		<property name="removeAbandoned">
+			<value>${database.removeAbandoned}</value>
+		</property>
+		<property name="testOnReturn">
+			<value>${database.testOnReturn}</value>
+		</property>
+		<property name="removeAbandonedTimeout">
+			<value>${database.removeAbandonedTimeout}</value>
+		</property>
+		<property name="testWhileIdle">
+			<value>${database.testWhileIdle}</value>
+		</property>
+		<property name="timeBetweenEvictionRunsMillis">
+			<value>${database.timeBetweenEvictionRunsMillis}</value>
+		</property>
+	</bean>
+
+	
+	<!-- EntityManager Factory -->
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+		p:dataSource-ref="dataSourceDev" p:jpaVendorAdapter-ref="jpaAdapter">
+		<property name="loadTimeWeaver">
+			<bean
+				class="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver" />
+		</property>
+		<property name="packagesToScan" value="matera.db.model" />
+		<property name="persistenceUnitName" value="vm_pum"></property>
+
+	
+	</bean>
+
+
+	<!-- JPA Adapter -->
+	<bean id="jpaAdapter"
+		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"
+		p:database="${jpa.database}" p:showSql="${jpa.showsql}"
+		p:databasePlatform="${database.dialect}" />
+
+
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
+		p:entityManagerFactory-ref="entityManagerFactory" />
+
+
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<bean
+		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+	<bean
+		class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+
+	<!-- Scans the classpath of this application for @Components to deploy as 
+		beans -->
+	<context:component-scan base-package="matera.db.model" />
+
+	<!-- Scans the jpa repositories -->
+	<jpa:repositories base-package="matera.db.repository" />
+</beans>

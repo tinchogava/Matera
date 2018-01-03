@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Comisiones" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="28" bottomMargin="48" uuid="62bf75f3-163c-453a-ac41-921d7953f992">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="24"/>
+	<parameter name="empresa" class="java.lang.String"/>
+	<parameter name="desde" class="java.util.Date"/>
+	<parameter name="hasta" class="java.util.Date"/>
+	<parameter name="tipoOperacion" class="java.lang.String"/>
+	<parameter name="zona" class="java.lang.String"/>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<field name="zona" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="especialidad" class="java.lang.String"/>
+	<field name="comision" class="java.math.BigDecimal"/>
+	<field name="beneficio" class="java.lang.String"/>
+	<field name="id_presupuesto" class="java.lang.Integer"/>
+	<field name="tipoOperacion" class="java.lang.String"/>
+	<field name="neto" class="java.math.BigDecimal"/>
+	<field name="rm" class="java.math.BigDecimal"/>
+	<field name="lineaFlotacion" class="java.math.BigDecimal"/>
+	<field name="importeComision" class="java.math.BigDecimal"/>
+	<variable name="netoAgente" class="java.math.BigDecimal" resetType="Group" resetGroup="agente" calculation="Sum">
+		<variableExpression><![CDATA[$F{neto}]]></variableExpression>
+	</variable>
+	<variable name="rmAgente" class="java.math.BigDecimal" resetType="Group" resetGroup="agente" calculation="Sum">
+		<variableExpression><![CDATA[$F{rm}]]></variableExpression>
+	</variable>
+	<variable name="flotAgente" class="java.math.BigDecimal" resetType="Group" resetGroup="agente" calculation="Sum">
+		<variableExpression><![CDATA[$F{lineaFlotacion}]]></variableExpression>
+	</variable>
+	<variable name="comisionAgente" class="java.math.BigDecimal" resetType="Group" resetGroup="agente" calculation="Sum">
+		<variableExpression><![CDATA[$F{importeComision}]]></variableExpression>
+	</variable>
+	<group name="agente">
+		<groupExpression><![CDATA[$F{nombre}]]></groupExpression>
+		<groupFooter>
+			<band height="224">
+				<rectangle>
+					<reportElement x="0" y="15" width="555" height="193" uuid="9f529570-db89-42e1-ac8e-e0146dab6191"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="0" y="139" width="91" height="15" uuid="0e868416-492d-405a-8cfb-306ad99257d6"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isUnderline="false"/>
+						<paragraph rightIndent="3"/>
+					</textElement>
+					<text><![CDATA[Hasta:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="124" width="91" height="15" uuid="934398b8-b689-494d-9484-bf9a0c769cc2"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isUnderline="false"/>
+						<paragraph rightIndent="3"/>
+					</textElement>
+					<text><![CDATA[Desde:]]></text>
+				</staticText>
+				<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+					<reportElement x="91" y="139" width="276" height="15" uuid="75ecac7c-59c0-474e-8565-ed78e811519c"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="8"/>
+						<paragraph leftIndent="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{hasta}]]></textFieldExpression>
+				</textField>
+				<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+					<reportElement x="91" y="124" width="276" height="15" uuid="eeac53f1-64f7-4e99-ac73-b3658834c88f"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="8"/>
+						<paragraph leftIndent="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{desde}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="91" y="154" width="276" height="15" uuid="b11de126-d83a-4bbc-ab1e-3515fc421877"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="false"/>
+						<paragraph leftIndent="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{tipoOperacion}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="154" width="91" height="15" uuid="b1f2577a-9960-43dc-9ed0-44a4d79ac175"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isUnderline="false"/>
+						<paragraph rightIndent="3"/>
+					</textElement>
+					<text><![CDATA[Tipo de operación]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="91" y="169" width="276" height="15" uuid="b556f93c-4d40-42a5-adbd-b8556d253ae0"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="false"/>
+						<paragraph leftIndent="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{zona}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="0" y="169" width="91" height="15" uuid="fae251ac-4871-4226-a2e4-bef52910fab0"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Arial" size="8" isBold="true" isUnderline="false"/>
+						<paragraph rightIndent="3"/>
+					</textElement>
+					<text><![CDATA[Zona]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="4" y="72" width="112" height="15" backcolor="#F0F0F0" uuid="ccfc689e-69b7-489e-bb72-98abd341e3c7"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Arial" size="12" isBold="true" isUnderline="false"/>
+						<paragraph rightIndent="3"/>
+					</textElement>
+					<text><![CDATA[Importe liquidado]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="0" y="47" width="555" height="25" uuid="7ee007c8-36a5-4c91-9469-cce3c7adf516"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="16" isBold="true"/>
+						<paragraph leftIndent="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+				</textField>
+				<textField pattern="¤ #,##0.00">
+					<reportElement mode="Opaque" x="116" y="72" width="439" height="15" backcolor="#F0F0F0" uuid="4f103351-015d-41dd-8013-a79d0dd343e5"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial"/>
+						<paragraph leftIndent="3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{comisionAgente}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+</jasperReport>

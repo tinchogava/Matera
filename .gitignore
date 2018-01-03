@@ -1,0 +1,7 @@
+*~
+*.swp
+*.swo
+jcs_swap/
+imagenes/
+iconos/
+config/configuration.properties
